@@ -247,7 +247,7 @@ def maskeff(z=None,zdct=None,*args,**kwargs):
 def vari(AA=None,*args,**kwargs):
     varargin = args
     nargin = 1 + len(varargin)
-    flat = AA.flatten(1)
+    flat = AA.flatten(order='C')
     varia = np.var(flat)
     #flat_sz = np.size(flat)
     
